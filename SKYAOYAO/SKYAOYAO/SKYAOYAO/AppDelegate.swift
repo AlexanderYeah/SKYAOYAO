@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: CGRect(x: 0, y: 0, width: kScreenW, height: kScreenH));
+        window?.makeKeyAndVisible();
+        window?.backgroundColor  = UIColor.white;
+        
+        window?.rootViewController = SKTabbarViewController();
+        
+        
         return true
     }
 
