@@ -19,6 +19,7 @@
 		A45046381EDFFB8900AFE50C /* SKCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45046371EDFFB8900AFE50C /* SKCategoryViewController.swift */; };
 		A450463A1EDFFBB400AFE50C /* SKShopCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45046391EDFFBB400AFE50C /* SKShopCarViewController.swift */; };
 		A450463C1EDFFBC500AFE50C /* SKProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A450463B1EDFFBC500AFE50C /* SKProfileViewController.swift */; };
+		C852AE669EDAF92F2F9D07DA /* Pods_SKYAOYAO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D4410D0E030637C7FB252F2 /* Pods_SKYAOYAO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D4410D0E030637C7FB252F2 /* Pods_SKYAOYAO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKYAOYAO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA8CD274AA66EFFCB4854AA /* Pods-SKYAOYAO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKYAOYAO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKYAOYAO/Pods-SKYAOYAO.debug.xcconfig"; sourceTree = "<group>"; };
 		A45045E91EDFEEAF00AFE50C /* SKYAOYAO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKYAOYAO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A45045EC1EDFEEAF00AFE50C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A45045F31EDFEEAF00AFE50C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		A45046371EDFFB8900AFE50C /* SKCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKCategoryViewController.swift; sourceTree = "<group>"; };
 		A45046391EDFFBB400AFE50C /* SKShopCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKShopCarViewController.swift; sourceTree = "<group>"; };
 		A450463B1EDFFBC500AFE50C /* SKProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKProfileViewController.swift; sourceTree = "<group>"; };
+		AA21C92100C1182F652FB5C5 /* Pods-SKYAOYAO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKYAOYAO.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKYAOYAO/Pods-SKYAOYAO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C852AE669EDAF92F2F9D07DA /* Pods_SKYAOYAO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +96,8 @@
 				A45046001EDFEEB000AFE50C /* SKYAOYAOTests */,
 				A450460B1EDFEEB000AFE50C /* SKYAOYAOUITests */,
 				A45045EA1EDFEEAF00AFE50C /* Products */,
+				AC16A0B8BF29D3668A933BD6 /* Pods */,
+				CE53683D7B1600E592B4C537 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -308,6 +315,23 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		AC16A0B8BF29D3668A933BD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DA8CD274AA66EFFCB4854AA /* Pods-SKYAOYAO.debug.xcconfig */,
+				AA21C92100C1182F652FB5C5 /* Pods-SKYAOYAO.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE53683D7B1600E592B4C537 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D4410D0E030637C7FB252F2 /* Pods_SKYAOYAO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -315,9 +339,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A45046111EDFEEB000AFE50C /* Build configuration list for PBXNativeTarget "SKYAOYAO" */;
 			buildPhases = (
+				587C119FA7F07CD9E8511A48 /* [CP] Check Pods Manifest.lock */,
 				A45045E51EDFEEAF00AFE50C /* Sources */,
 				A45045E61EDFEEAF00AFE50C /* Frameworks */,
 				A45045E71EDFEEAF00AFE50C /* Resources */,
+				944B4FEC82ADA7EF2DAB1A14 /* [CP] Embed Pods Frameworks */,
+				A64CC2EBE005230AF25E6D0B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -439,6 +466,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		587C119FA7F07CD9E8511A48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		944B4FEC82ADA7EF2DAB1A14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKYAOYAO/Pods-SKYAOYAO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A64CC2EBE005230AF25E6D0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SKYAOYAO/Pods-SKYAOYAO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A45045E51EDFEEAF00AFE50C /* Sources */ = {
@@ -594,6 +669,7 @@
 		};
 		A45046121EDFEEB000AFE50C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA8CD274AA66EFFCB4854AA /* Pods-SKYAOYAO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7DC4XMJV5E;
@@ -609,6 +685,7 @@
 		};
 		A45046131EDFEEB000AFE50C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA21C92100C1182F652FB5C5 /* Pods-SKYAOYAO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7DC4XMJV5E;
@@ -699,6 +776,7 @@
 				A45046131EDFEEB000AFE50C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A45046141EDFEEB000AFE50C /* Build configuration list for PBXNativeTarget "SKYAOYAOTests" */ = {
 			isa = XCConfigurationList;
@@ -707,6 +785,7 @@
 				A45046161EDFEEB000AFE50C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A45046171EDFEEB000AFE50C /* Build configuration list for PBXNativeTarget "SKYAOYAOUITests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +794,7 @@
 				A45046191EDFEEB000AFE50C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
